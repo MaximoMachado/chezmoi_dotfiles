@@ -1,3 +1,7 @@
 alias vim="nvim"
 
 . "$HOME/.local/bin/env"
+
+. "$HOME/.atuin/bin/env"
+
+eval "$(atuin init zsh)"

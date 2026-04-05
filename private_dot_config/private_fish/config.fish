@@ -22,3 +22,7 @@ end
 
 
 set -gx PATH "/home/maximo/.pixi/bin" $PATH
+
+if status is-interactive
+    atuin init fish | source
+end
