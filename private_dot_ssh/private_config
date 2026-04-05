@@ -1,0 +1,5 @@
+Host spm
+	HostName 10.0.0.237
+	User maximo
+	IdentityFile ~/.ssh/golden-finch
+	Port 22
