@@ -1,0 +1,16 @@
+[user]
+    email = maximomachado246@gmail.com
+    name = Maximo Machado
+[init]
+    defaultBranch = main
+[alias]
+    lol = "log --graph --oneline --decorate --color --all"
+    lols = "log --graph --oneline --decorate --color --all --stat"
+    lmao = "log --graph --oneline --decorate --color --all --name-status"
+    c = "commit"
+    co = "checkout"
+    cob = "checkout -b"
+    df = "diff --staged"
+    dfu = "diff HEAD"
+    s = "status"
+    undo = "reset HEAD~"

@@ -1,0 +1,42 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "provider": {
+    "llama.cpp": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "llama-server (local)",
+      "options": {
+        "baseURL": "http://127.0.0.1:8080/v1"
+      },
+      "models": {
+        "unsloth/Qwen3.5-35B-A3B-GGUF:Q4_K_M": {
+          "name": "Qwen3.5: a3b-35b-q4 (local)",
+          "limit": {
+            "context": 262144,
+            "output": 65536
+          }
+        },
+        "unsloth/Qwen3.5-35B-A3B-GGUF:Q6_K": {
+          "name": "Qwen3.5: a3b-35b-q6 (local)",
+          "limit": {
+            "context": 197888,
+            "output": 65536
+          }
+        },
+        "unsloth/gemma-4-26B-A4B-it-GGUF:UD-Q8_K_XL": {
+          "name": "Gemma 4 MoE 26B-A4B",
+          "limit": {
+            "context": 231424,
+            "output": 65536
+          }
+        },
+        "unsloth/gemma-4-31B-it-GGUF:UD-Q6_K_XL": {
+          "name": "Gemma 4 Dense 31B",
+          "limit": {
+            "context": 58624,
+            "output": 65536
+          }
+        }
+      }
+    }
+  }
+}
