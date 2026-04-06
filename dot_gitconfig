@@ -1,6 +1,8 @@
 [user]
     email = maximomachado246@gmail.com
     name = Maximo Machado
+[core]
+    editor=vim
 [init]
     defaultBranch = main
 [alias]
