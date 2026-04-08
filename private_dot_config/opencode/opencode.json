@@ -8,7 +8,7 @@
         "baseURL": "http://127.0.0.1:8080/v1"
       },
       "models": {
-        "unsloth/Qwen3.5-35B-A3B-GGUF:Q4_K_M": {
+        "unsloth/Qwen3.5-35B-A3B-GGUF:UD-Q4_K_XL": {
           "name": "Qwen3.5: a3b-35b-q4 (local)",
           "limit": {
             "context": 262144,

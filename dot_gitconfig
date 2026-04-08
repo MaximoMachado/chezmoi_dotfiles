@@ -1,10 +1,10 @@
 [user]
     email = maximomachado246@gmail.com
     name = Maximo Machado
-[core]
-    editor=vim
 [init]
     defaultBranch = main
+[core]
+    editor = vim
 [alias]
     lol = "log --graph --oneline --decorate --color --all"
     lols = "log --graph --oneline --decorate --color --all --stat"
