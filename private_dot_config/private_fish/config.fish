@@ -8,21 +8,20 @@ alias ls="lsd -l"
 alias fd="fdfind"
 alias zel="zellij"
 
+set -x EDITOR=vim
+
 ssh-add $HOME/.ssh/golden-finch
 
 # opencode
 fish_add_path /home/maximo/.opencode/bin
 fish_add_path /usr/local/cuda/bin
 fish_add_path $HOME/build/llama.cpp/build/bin
+
 set -x LD_LIBRARY_PATH /usr/local/cuda/lib64 $LD_LIBRARY_PATH
 
+atuin init fish | source
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv fish)"
-
 end
-
 
 set -gx PATH "/home/maximo/.pixi/bin" $PATH
 
-if status is-interactive
-    atuin init fish | source
-end
