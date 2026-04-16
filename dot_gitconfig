@@ -5,14 +5,25 @@
     defaultBranch = main
 [core]
     editor = vim
+    pager = delta
+[interactive]
+    diffFilter = delta --color-only
+[delta]
+    navigate = true
+    dark = true
+[merge]
+    conflictStyle = zdiff3
 [alias]
-    lol = "log --graph --oneline --decorate --color --all"
-    lols = "log --graph --oneline --decorate --color --all --stat"
-    lmao = "log --graph --oneline --decorate --color --all --name-status"
     c = "commit"
     co = "checkout"
     cob = "checkout -b"
+    s = "status"
+    nudge = "push --force-with-lease"
+    lol = "log --graph --oneline --decorate --color --all --abbrev-commit"
+    lols = "log --graph --oneline --decorate --color --all --abbrev-commit --stat"
+    lmao = "log --graph --oneline --decorate --color --all --abbrev-commit --name-status"
+    oops = "commit --fixup"
+    autosquash = "rebase -i --autosquash"
     df = "diff --staged"
     dfu = "diff HEAD"
-    s = "status"
     undo = "reset HEAD~"
