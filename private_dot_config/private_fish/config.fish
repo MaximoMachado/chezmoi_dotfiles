@@ -8,7 +8,11 @@ alias ls="lsd -l"
 alias fd="fdfind"
 alias zel="zellij"
 
-set -x EDITOR=vim
+if type -q nvim
+    set -x EDITOR=nvim
+else
+    set -x EDITOR=vim
+end
 
 ssh-add $HOME/.ssh/golden-finch
 
