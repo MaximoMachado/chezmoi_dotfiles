@@ -22,6 +22,13 @@
             "output": 65536
           }
         },
+        "unsloth/Qwen3.6-35B-A3B-GGUF:UD-Q4_K_XL": {
+          "name": "Qwen3.6: a3b-35b-q4 (local)",
+          "limit": {
+            "context": 262144,
+            "output": 65536
+          }
+        },
         "unsloth/gemma-4-26B-A4B-it-GGUF:UD-Q8_K_XL": {
           "name": "Gemma 4 MoE 26B-A4B",
           "limit": {
