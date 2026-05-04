@@ -25,6 +25,7 @@ set -gx LD_LIBRARY_PATH /usr/local/cuda/lib64 $LD_LIBRARY_PATH
 
 atuin init fish | source
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv fish)"
+
 end # is-interactive
 
 set -gx PATH "/home/maximo/.pixi/bin" $PATH
